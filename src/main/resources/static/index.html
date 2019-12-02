@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>enter your number
+    <form action="/greeting" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    Id: <input name="id" type="text" th:field="*{id}" />
+<p><button type="submit" value="Submit" /> </p>
+</form></p>
+</body>
+</html>
